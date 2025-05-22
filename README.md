@@ -1,6 +1,18 @@
 # Crazyflie Firmware  [![CI](https://github.com/bitcraze/crazyflie-firmware/workflows/CI/badge.svg)](https://github.com/bitcraze/crazyflie-firmware/actions?query=workflow%3ACI)
 
-This project contains the source code for the firmware used in the Crazyflie range of platforms, including the Crazyflie 2.x and the Roadrunner.
+This repo contains the source code for the TinyMPC-integrated firmware used in the Crazyflie 2.1. TinyMPC is publicly available at [tinympc.org](https://tinympc.org/).
+
+Currently, it supports:
+
+* Full-state quaternion-based LQR or LQI controller within the app layer in `examples/controller_lqr` and `examples/controller_lqi`.
+* Full-state quaternion-based TinyMPC supporting quadratic objective, linear system, linear and second-order cone constraints on state and control input in `example/controller_mpc*`.
+* Some other related stuff.
+
+High-level commands via https://github.com/sschoedel/crazyswarm/tree/demo/socp
+
+You might want to check different branches for the corresponding experiments.
+
+Feel free to reach out to the developers if you have any questions. 
 
 ### Crazyflie 1.0 support
 
